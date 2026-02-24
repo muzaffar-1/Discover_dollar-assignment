@@ -39,5 +39,6 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
           cd Discover_dollar-assignment
+          docker compose down
           docker-compose pull
           docker-compose up -d
