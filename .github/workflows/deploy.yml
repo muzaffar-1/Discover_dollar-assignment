@@ -1,0 +1,43 @@
+name: CI-CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Login to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Build Backend Image
+      run: |
+        cd backend
+        docker build -t muzaffar81/backend:v1 .
+        docker push muzaffar81/backend:v1
+
+    - name: Build Frontend Image
+      run: |
+        cd frontend
+        docker build -t muzaffar81/frontend:v1 .
+        docker push muzaffar81/frontend:v1
+
+    - name: Deploy to EC2
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          cd Discover_dollar-assignment
+          docker-compose pull
+          docker-compose up -d
