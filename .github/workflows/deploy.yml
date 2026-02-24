@@ -40,5 +40,5 @@ jobs:
         script: |
           cd Discover_dollar-assignment
           docker compose down
-          docker-compose pull
-          docker-compose up -d
+          docker compose pull
+          docker compose up -d
