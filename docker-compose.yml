@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+
+  mongo:
+    image: mongo:6
+    container_name: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    image: muzaffar81/backend:v1
+    container_name: backend
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+    environment:
+      - DB_HOST=mongo
+
+  frontend:
+    image: muzaffar81/frontend:v1
+    container_name: frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:
