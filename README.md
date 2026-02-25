@@ -104,23 +104,25 @@ This ensures automatic deployment after every push.
 
 ## 📸 Screenshots
 
+## 📸 Screenshots
+
 ### Docker Containers Running
-![Docker PS](docker-ps.png)
+![Docker PS](screenshots/docker-ps.png)
 
 ### Docker Images Built
-![Docker Images](docker-images.png)
+![Docker Images](screenshots/docker-images.png)
 
 ### Images Pushed to Docker Hub
-![Docker Hub Push](images-pushed-to-dockerhub.png)
+![Docker Hub Push](screenshots/images-pushed-to-dockerhub.png)
 
 ### Docker Hub Repositories
-![Docker Hub Repos](dockerhub-repos.png)
+![Docker Hub Repos](screenshots/dockerhub-repos.png)
 
 ### GitHub Actions Successful Run
-![GitHub Actions](github-actions-success.png)
+![GitHub Actions](screenshots/github-actions-success.png)
 
 ### Application UI
-![Application UI](app-ui.png) app-ui.png
+![Application UI](screenshots/app-ui.png)
 
 ---
 
