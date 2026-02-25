@@ -117,7 +117,7 @@ This ensures automatic deployment after every push.
 ![Docker Hub Repos](dockerhub-repos.png)
 
 ### GitHub Actions Successful Run
-![GitHub Actions](github-actions-success.png) https://github.com/muzaffar-1/Discover_dollar-assignment/blob/b32197de6575b3b58953a30c12d7d691c41ffb33/github-actions-success.png
+![GitHub Actions](github-actions-success.png)
 
 ### Application UI
 ![Application UI](app-ui.png) app-ui.png
