@@ -104,8 +104,6 @@ This ensures automatic deployment after every push.
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 ### Docker Containers Running
 ![Docker PS](screenshots/docker-ps.png)
 
@@ -123,6 +121,8 @@ This ensures automatic deployment after every push.
 
 ### Application UI
 ![Application UI](screenshots/app-ui.png)
+
+![Docker Compose](screenshots/docker-compose.png)
 
 ---
 
