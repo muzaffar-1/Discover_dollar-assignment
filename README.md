@@ -102,13 +102,25 @@ This ensures automatic deployment after every push.
 
 ---
 
-## 📸 Screenshots Included
+## 📸 Screenshots
 
-- Docker images built successfully
-- Docker Hub repositories
-- Running containers on EC2 (docker ps)
-- GitHub Actions successful run
-- Working application UI
+### Docker Containers Running
+![Docker PS](docker-ps.png)
+
+### Docker Images Built
+![Docker Images](docker-images.png)
+
+### Images Pushed to Docker Hub
+![Docker Hub Push](images-pushed-to-dockerhub.png)
+
+### Docker Hub Repositories
+![Docker Hub Repos](dockerhub-repos.png)
+
+### GitHub Actions Successful Run
+![GitHub Actions](github-actions-success.png) https://github.com/muzaffar-1/Discover_dollar-assignment/blob/b32197de6575b3b58953a30c12d7d691c41ffb33/github-actions-success.png
+
+### Application UI
+![Application UI](app-ui.png) app-ui.png
 
 ---
 
